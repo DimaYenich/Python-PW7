@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма введення</title>
+</head>
+<body>
+    <h1>Форма введення</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Електронна пошта:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>
